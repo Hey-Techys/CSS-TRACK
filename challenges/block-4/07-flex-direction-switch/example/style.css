@@ -1,0 +1,29 @@
+/* Worked example for Block 4, Issue #7: Stack items on mobile and line them up on desktop with flex-direction */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature {
+  padding: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .features {
+    flex-direction: row;
+  }
+
+  .feature {
+    flex: 1;
+  }
+}

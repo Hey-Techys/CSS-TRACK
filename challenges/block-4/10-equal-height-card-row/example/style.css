@@ -1,0 +1,52 @@
+/* Worked example for Block 4, Issue #10: Build a row of equal-height cards that wraps on small screens */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 16rem;
+  padding: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card-link {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card-link:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}

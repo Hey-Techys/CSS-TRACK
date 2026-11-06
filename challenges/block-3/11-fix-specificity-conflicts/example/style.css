@@ -1,0 +1,20 @@
+/* Worked example for Block 3, Issue #11: Fix a stylesheet with specificity conflicts */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#intro p { color: gray; }
+/* Fix 1: "#intro p" (1 ID + 1 element) beat ".lead" (1 class).
+   Matching the ID in the selector makes this rule more specific. */
+#intro .lead { color: navy; }
+
+#main-nav a { color: black; }
+/* Fix 2: "#main-nav a" (1 ID + 1 element) beat ".active" (1 class).
+   Including the ID makes the active rule more specific. */
+#main-nav a.active { color: orange; }
+
+/* Fix 3: !important on "p" overrode every other font-size rule. Removing it lets the
+   more specific ".small" class win normally. */
+p { font-size: 1rem; }
+.small { font-size: 0.8rem; }

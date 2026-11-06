@@ -1,0 +1,52 @@
+/* Worked example for Block 3, Issue #10: Style your Block 1 bio page with typography and spacing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+.site-header,
+.content,
+.site-footer {
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.site-header {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.site-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.25rem;
+}
+
+.site-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+section + section {
+  margin-top: 2rem;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+}
+
+.site-footer {
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.875rem;
+  color: #6b7280;
+}

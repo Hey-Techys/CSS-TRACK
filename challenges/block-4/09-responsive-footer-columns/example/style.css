@@ -1,0 +1,47 @@
+/* Worked example for Block 4, Issue #9: Build a footer with columns that stack on mobile */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.footer-col h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.footer-col ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-col a {
+  color: #d1d5db;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+}
+
+.footer-col a:focus-visible {
+  outline: 2px solid #facc15;
+  outline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+  }
+}

@@ -1,0 +1,21 @@
+/* Worked example for Block 4, Issue #2: Center an element horizontally and vertically with Flexbox */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eef2ff;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: center;
+}

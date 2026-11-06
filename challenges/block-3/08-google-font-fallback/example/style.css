@@ -1,0 +1,10 @@
+/* Worked example for Block 3, Issue #8: Add a Google Font with a fallback font stack */
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 600;
+}

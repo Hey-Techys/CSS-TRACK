@@ -1,0 +1,7 @@
+/* Worked example for Block 3, Issue #1: Link an external stylesheet and set base page styles */
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #1f2937;
+  background-color: #f9fafb;
+}

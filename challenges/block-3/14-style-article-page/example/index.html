@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example — Build a fully styled, readable article page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <article class="article">
+      <header>
+        <p class="eyebrow">Block 3 · CSS</p>
+        <h1>Why the Box Model Matters</h1>
+        <p class="meta">By Ada Lovelace · 5 min read</p>
+      </header>
+      <p>Every element on a web page is a rectangle. Understanding how its <code>content</code>, <code>padding</code>, <code>border</code> and <code>margin</code> fit together is the first step to controlling layout.</p>
+      <h2>Four layers</h2>
+      <ul>
+        <li>Content — the text or image itself</li>
+        <li>Padding — space inside the border</li>
+        <li>Border — the visible edge</li>
+        <li>Margin — space outside the border</li>
+      </ul>
+      <blockquote>
+        <p>Set <code>box-sizing: border-box</code> once, and widths finally mean what you expect.</p>
+      </blockquote>
+      <figure>
+        <img src="https://placehold.co/600x300?text=Box+model" alt="Diagram of nested content, padding, border and margin boxes">
+        <figcaption>The four layers of the CSS box model.</figcaption>
+      </figure>
+      <h2>Takeaway</h2>
+      <p>Once spacing is predictable, every other layout tool becomes easier to learn.</p>
+    </article>
+  </main>
+</body>
+</html>

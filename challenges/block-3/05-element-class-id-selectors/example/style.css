@@ -1,0 +1,21 @@
+/* Worked example for Block 3, Issue #5: Style a list using element, class and ID selectors */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Element selector: every list item */
+li {
+  padding: 4px 0;
+}
+
+/* Class selector: any element with class="highlight" */
+.highlight {
+  color: #2563eb;
+}
+
+/* ID selector: the single element with id="favourite" */
+#favourite {
+  font-weight: bold;
+  text-decoration: underline;
+}

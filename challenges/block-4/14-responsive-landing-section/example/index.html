@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example — Build a mobile-first landing page with Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">Hey_Techys</a>
+    <nav aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#testimonial">Stories</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Learn to code by shipping real PRs</h1>
+        <p>A 10-month mentorship track from HTML to React, built around small, reviewable issues.</p>
+        <a class="btn" href="#join">Join the next cohort</a>
+      </div>
+      <img class="hero-image" src="https://placehold.co/800x600?text=Hero" alt="Participants pairing on a laptop">
+    </section>
+    <section id="features" class="features container">
+      <article class="feature"><h2>Small issues</h2><p>Each task fits in an evening.</p></article>
+      <article class="feature"><h2>Real reviews</h2><p>Every PR gets feedback from a mentor.</p></article>
+      <article class="feature"><h2>Leaderboard</h2><p>Earn points for every merged PR.</p></article>
+    </section>
+    <section id="testimonial" class="testimonial container">
+      <blockquote>
+        <p>"I went from never using Git to 12 merged PRs in a month."</p>
+        <footer>— Amina, September cohort</footer>
+      </blockquote>
+    </section>
+  </main>
+  <footer id="join" class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Hey_Techys</p>
+      <a href="#">Apply now</a>
+    </div>
+  </footer>
+</body>
+</html>

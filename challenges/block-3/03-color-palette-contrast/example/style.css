@@ -1,0 +1,17 @@
+/* Worked example for Block 3, Issue #3: Apply a 3-color palette with accessible contrast */
+
+/* Palette
+   background: #fffbf5
+   text:       rgb(31, 41, 55)   -> contrast vs background ≈ 14:1 (passes AA)
+   accent:     hsl(14, 80%, 42%) -> contrast vs background ≈ 5.2:1 (passes AA)
+*/
+body {
+  background-color: #fffbf5;
+  color: rgb(31, 41, 55);
+  font-family: Arial, sans-serif;
+}
+
+h1,
+a {
+  color: hsl(14, 80%, 42%);
+}

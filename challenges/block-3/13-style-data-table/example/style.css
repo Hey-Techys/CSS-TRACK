@@ -1,0 +1,33 @@
+/* Worked example for Block 3, Issue #13: Style a data table with borders, zebra rows and a caption */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 2rem auto;
+  min-width: 24rem;
+}
+
+caption {
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  text-align: left;
+}
+
+thead th {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f3f4f6;
+}

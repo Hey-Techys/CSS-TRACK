@@ -1,0 +1,76 @@
+/* Worked example for Block 3, Issue #15: Build a hero section with a positioned text overlay */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  position: relative;
+  min-height: 60vh;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  width: min(90%, 40rem);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-content h1 {
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+}
+
+.hero-content p {
+  margin: 0 0 1.5rem;
+  font-size: 1.125rem;
+}
+
+.hero-cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  background-color: #facc15;
+  color: #111827;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero-cta:hover {
+  background-color: #fde047;
+}
+
+.hero-cta:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+main {
+  padding: 2rem 1rem;
+}

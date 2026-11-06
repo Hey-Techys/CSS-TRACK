@@ -1,0 +1,82 @@
+/* Worked example for Block 4, Issue #13: Build responsive pricing cards with a highlighted plan */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+}
+
+.plan ul {
+  padding-left: 1.25rem;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.plan-cta {
+  margin-top: auto;
+  padding: 0.75rem;
+  border-radius: 6px;
+  background-color: #e5e7eb;
+  color: #111827;
+  text-align: center;
+  text-decoration: none;
+}
+
+.plan-cta:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+.plan-featured {
+  order: -1;
+  border: 2px solid #7c3aed;
+}
+
+.plan-featured .plan-cta {
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .pricing {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .plan {
+    flex: 1;
+  }
+
+  .plan-featured {
+    order: 0;
+    flex-grow: 1.15;
+  }
+}

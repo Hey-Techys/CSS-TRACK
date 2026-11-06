@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example — Fix a stylesheet with specificity conflicts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="main-nav">
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+  </nav>
+  <main>
+    <section id="intro">
+      <p class="lead">This lead paragraph should be navy.</p>
+      <p>This paragraph stays gray.</p>
+      <p class="small">This note should be smaller.</p>
+    </section>
+  </main>
+</body>
+</html>

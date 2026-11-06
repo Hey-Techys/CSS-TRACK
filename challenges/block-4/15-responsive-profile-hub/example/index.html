@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example — Restyle your Profile & Contact Hub as a responsive site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">Ada Lovelace</a>
+    <nav aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about" class="about container">
+      <img class="about-image" src="https://placehold.co/320x320?text=Ada" alt="Portrait of Ada Lovelace">
+      <div>
+        <h1>Hi, I'm Ada</h1>
+        <p>I'm a Hey_Techys participant learning to build accessible, responsive websites.</p>
+      </div>
+    </section>
+    <section id="projects" class="container">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card"><h3>Bio page</h3><p>Semantic HTML from Block 1.</p><a href="#">View</a></article>
+        <article class="card"><h3>Contact form</h3><p>An accessible form with native validation from Block 2.</p><a href="#">View</a></article>
+        <article class="card"><h3>Landing page</h3><p>A responsive flexbox layout.</p><a href="#">View</a></article>
+      </div>
+    </section>
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <form class="form" action="/contact" method="POST">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="4" required></textarea></div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><p>&copy; 2026 Ada Lovelace</p></footer>
+</body>
+</html>

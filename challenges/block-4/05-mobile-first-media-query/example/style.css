@@ -1,0 +1,26 @@
+/* Worked example for Block 4, Issue #5: Write your first mobile-first media query */
+
+/* Base: small screens */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .page {
+    padding: 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}

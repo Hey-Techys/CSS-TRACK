@@ -1,0 +1,22 @@
+/* Worked example for Block 4, Issue #4: Build a wrapping tag list with flex-wrap */
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background-color: #dbeafe;
+  color: #1e3a8a;
+}

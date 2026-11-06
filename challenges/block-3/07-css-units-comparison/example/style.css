@@ -1,0 +1,20 @@
+/* Worked example for Block 3, Issue #7: Compare px, %, em and rem units side by side */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  margin-bottom: 16px;
+  background-color: #e0f2fe;
+  border: 1px solid #0284c7;
+}
+
+.px      { width: 300px; padding: 16px; }
+.percent { width: 60%;   padding: 16px; }
+.em      { width: 20em;  padding: 1em; }
+.rem     { width: 20rem; padding: 1rem; }
+
+.parent-large {
+  font-size: 20px;
+}
